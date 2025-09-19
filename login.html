@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AyurSutra - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="login-styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <button class="back-btn" onclick="goBack()">←</button>
+    <h1 class="logo-text">AyurSutra</h1>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- Login Container -->
+  <section class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h2 class="login-title" id="loginTitle">Doctor Login</h2>
+      </div>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="mobile" class="form-label">Mobile number:</label>
+          <input type="tel" id="mobile" name="mobile" class="form-input" placeholder="+91" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="otp" class="form-label">OTP:</label>
+          <input type="text" id="otp" name="otp" class="form-input" placeholder="------" maxlength="6" required>
+        </div>
+        
+        <button type="submit" class="login-btn">Login</button>
+        
+        <div class="create-account">
+          <a href="#" onclick="createAccount()">Create a new account*</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="login-script.js"></script>
+</body>
+</html>
